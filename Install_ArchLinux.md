@@ -4,7 +4,7 @@ ta tu typowo, dla uproszczenia po pipe (|) nazwy urzadzen w tym scenariuszu
 
     > /boot - ok. 300M      | /dev/sda1
     > swap  - ok. 6G        | /dev/sda2
-    > /     - ok. 32GB      | /dev/sda3
+    > /     - ok. 32G       | /dev/sda3
     > /home - to co zostalo | /dev/sda4
 
 lecim z formatami  
@@ -53,7 +53,7 @@ wchodzimy to instalacji linuxa co sie pobrala wlasnie
 
 instalujemy bootloadera
 
-`$ bootclt install`
+`$ bootctl install`
 
 i nakurwiamy konfiguracje bootloadera
 
