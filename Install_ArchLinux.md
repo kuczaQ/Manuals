@@ -10,16 +10,16 @@ ta tu typowo, dla uproszczenia po pipe (|) nazwy urzadzen w tym scenariuszu
 lecim z formatami  
 
 
-`$ mkfs.vfat /dev/sda1 -n EFI -F 32`  
-`$ mkswap /dev/sda2`  
-`$ mkfs.ext4 /dev/sda3 -L ROOT`  
+`$ mkfs.vfat /dev/sda1 -n EFI -F 32`  # make vfat file system  
+`$ mkswap /dev/sda2`  # make swap  
+`$ mkfs.ext4 /dev/sda3 -L ROOT` # make ext4 file system  
 `$ mkfs.ext4 /dev/sda4`  
 
 teraz montujemy
 
 `$ mount /dev/sda3 /mnt`  
 `$ cd /mnt`  
-`$ mkdir home`  
+`$ mkdir home`  # make directory  
 `$ mkdir boot`  
 `$ mount /dev/sda1 boot`  
 `$ mount /dev/sda4 home`  
@@ -49,7 +49,7 @@ opcja -L mowi, ze ma wygenerowac to na podstawie etykiet
 
 wchodzimy to instalacji linuxa co sie pobrala wlasnie
 
-`$ arch-chroot /mnt`
+`$ arch-chroot /mnt`  # arch change root
 
 instalujemy bootloadera
 
